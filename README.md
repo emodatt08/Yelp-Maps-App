@@ -19,7 +19,7 @@ $ sudo npm install -g ionic cordova
 ```
 
 ```
-$ git clone https://github.com/emodatt08/8ball-App.git
+$ git clone https://github.com/emodatt08/Yelp-Maps-App.git
 $ cd <project name>
 ```
 
