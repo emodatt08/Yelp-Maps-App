@@ -1,29 +1,59 @@
-This is a starter template for a [Code Craft](https://codecraftpro.com/) course on developing mobile apps with the [Ionic Framework](http://ionicframework.com/).
+# Yelp Map [![Build Status](https://travis-ci.org/NativeScript/sample-Groceries.svg?branch=release)](https://travis-ci.org/NativeScript/sample-Groceries)
 
-## How to use this template
+Yelp map is an Ionic Android/IOS that shows a map with a list of businesses represented by brown arrow markers. 
 
-*This template does not work on its own*. It is missing the Ionic library, and AngularJS.
 
-To use this, either create a new ionic project using the ionic node.js utility, or copy and paste this into an existing Cordova project and download a release of Ionic separately.
+<h2 id="screenshots">Screenshots</h2>
 
-### With the Ionic tool:
+![](assets/screenshots/map.png)
 
-Add the URL to this github repo as the last parameter to the `ionic start` command:
 
-```bash
+<h2 id="development">Development</h2>
+
+This app is built with the Ionic v1 CLI. Once you have the [CLI installed](https://ionicframework.com/docs/v1/), start by cloning the repo:
+
+
+This installs ionic on your system including the CLI 
+```
 $ sudo npm install -g ionic cordova
-$ ionic start myApp <INSERT-REPO-URL>
 ```
 
-Then, to run it, cd into `myApp` and run:
+```
+$ git clone https://github.com/emodatt08/8ball-App.git
+$ cd <project name>
+```
 
-```bash
+From there you can use the `rebuild` command to rebuild the project:
+
+```
+$ npm rebuild node-sass
+```
+
+then use `serve` command to run the project on your web browser:
+
+```
+$ ionic serve --lab
+```
+
+If you wish to run the project on an emulator run the commands below to add the specific  mobile platforms(Android/IOS):
+
+```
 $ ionic platform add ios
 $ ionic build ios
 $ ionic emulate ios
 ```
 
-Substitute ios for android if not on a Mac, but if you can, the ios development toolchain is a lot easier to work with until you need to do anything custom to Android.
+then use `run` command to run the project on your the emulator:
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question please email hi@codecraftpro.com.
+```
+$ ionic cordova build ios
+$ ionic cordova emulate ios
+OR
+
+$ ionic cordova build android
+$ ionic cordova emulate android
+
+```
+
+
+For more information on testing and developing Ionic v1 apps, refer to the [Ionic v1 docs on the topic](https://ionicframework.com/docs/v1/guide/testing.html).
