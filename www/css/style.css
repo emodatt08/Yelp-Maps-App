@@ -1,0 +1,17 @@
+.bar-header .title img {
+	height: 24px;
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-top: -5px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+.bar-header {
+background-color: #ffe87c;
+
+}
+map{
+
+	height:100%;
+}
